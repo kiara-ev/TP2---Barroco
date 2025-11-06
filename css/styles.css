@@ -10,6 +10,10 @@ body {
     box-sizing: border-box;
 }
 
+main {
+  padding-top: 80px; 
+}
+
 /*CONTENEDOR PRINCIPAL*/
 .container {
     max-width: 100%;
@@ -45,6 +49,20 @@ nav a {
 nav a:hover {
     color: #f5f3ef;
     text-shadow: 0 0 10px #cda84a;
+}
+
+/*ESTETICA GENERAL DE LO ESCRITO(?*/
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #f5f3ef;
+}
+h2 {
+    font-family: "cinzel decorative", serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #cda84a;
 }
 .poster {
     position: relative;
@@ -92,12 +110,13 @@ nav a:hover {
     box-sizing: border-box;
 }
 
+/* PANEL DE CONTENIDO 1 */
 .panel {
     background: #1a1a1a;
     padding: 15px;
     border-radius: 4px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     align-items: stretch;
     overflow: hidden;
@@ -124,21 +143,28 @@ nav a:hover {
   color: #ddd;
 }
 
-/* PANEL CLARO */
+/* PANEL DE CONTENIDO 2 CLARO */
 .panel.light {
   background: #e8e7e3;
-  color: #1a1a1a;
+  color: #1a1a1a; 
 }
 
-.panel.light h3 {
-  color: #cda84a;
+.panel.light.texto {
+    background:#e8e7e3; 
 }
 
-/* PANEL ANCHO */
+.panel.light p {
+  color: #222; 
+}
+
+/* PANEL DE CONTENIDO 3 ANCHO */
 .panel.wide {
   grid-column: 1 / -1;
 }
 
+ .footer {
+    font-size: 0.8rem;
+  }
 
 /*EFECTO INFO CUADROS*/
 .imghvr-push-right {
@@ -161,3 +187,17 @@ nav a:hover {
     font-size: 0.9rem;
     font-family: "Cormorant Garamond", serif;
 }
+
+/*RESPONSIVE*/
+@media (max-width: 900px) {
+  .panel {
+    flex-direction: column; /* en pantallas pequeñas vuelve a apilar */
+  }
+  .imghvr-push-right {
+    width: 100%;
+  }
+  .panel .texto {
+    width: 100%;
+  }
+}
+
