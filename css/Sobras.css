@@ -3,14 +3,47 @@ body {
   background-color: #1a1a1a;
   color: #f4e3c1;
   font-family: "cormorant garamond", serif;
+  padding-top: 100px;
 }
 
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── NAVEGADOR ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(15, 15, 15, 0.95);
+    border-bottom: 2px solid #cda84a;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    z-index: 1000;
+}
+nav a {
+    text-decoration: none;
+    color: #cda84a;
+    font-family: "playfair display", serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+nav a:hover {
+    color: #f5f3ef;
+    text-shadow: 0 0 10px #cda84a;
+}
 
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── PANEL CONT ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .panel {
-  background-image: url('barroco-fondo.jpg');
-  background-size: cover;
   background-position: center;
-  height: 70vh;
+  height: 70px;
   position: relative;
   display: flex;
   align-items: center;
@@ -18,10 +51,8 @@ body {
 }
 
 .panel .overlay {
-  background: rgba(0, 0, 0, 0.6);
   padding: 2rem 3rem;
   text-align: center;
-  border: 1px solid #a18147;
 }
 
 .panel h1 {
@@ -40,19 +71,13 @@ body {
 }
 
 
-/* ----- GALLERY SECTION ----- */
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── GALERIA ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+
 .gallery-section {
   padding: 3rem 5%;
   background-color: #1c1c1c;
-}
-
-.gallery-section h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #d4af37;
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
 }
 
 .gallery {
@@ -60,6 +85,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─ CARTA ARTISTICA ─⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 
 .art-card {
   overflow: hidden;
@@ -100,7 +129,9 @@ body {
   font-family: "pinyon script", cursive;
 }
 
-/* ----- FOOTER ----- */
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── FOORER ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 footer {
   text-align: center;
   background-color: #111;
@@ -108,4 +139,17 @@ footer {
   font-size: 0.9rem;
   color: #8b7a55;
   border-top: 1px solid #3d2b1f;
+}
+
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─── RESPONSIVE ───⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+@media (max-width: 900px) {
+  .panel {
+    flex-direction: column; /* en pantallas pequeñas vuelve a apilar */
+  }
+  .panel .texto {
+    width: 100%;
+  }
 }

@@ -14,9 +14,9 @@ main {
   padding-top: 80px; 
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧𓆟 𓆞 ·｡CONTENEDOR PRINCIPAL°‧ 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ── CONTENEDOR PRINCIPAL ──⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .container {
     max-width: 100%;
     border-radius: 8px;
@@ -25,9 +25,10 @@ main {
     flex-direction: column;
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡NAVEGADOR°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── NAVEGADOR ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 header {
     position: fixed;
     top: 0;
@@ -41,6 +42,7 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 15px 0;
+    z-index: 1000;
 }
 nav a {
     text-decoration: none;
@@ -72,9 +74,10 @@ h2 {
     color: #cda84a;
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧𓆝 𓆟 𓆞 ·｡POSTER/NAV/HEADER°‧𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─── POSTER/GRID ───⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .poster {
     position: relative;
     width: 100%;
@@ -90,7 +93,6 @@ h2 {
     box-sizing: border-box;
 }
 .poster h1{
-    position: center;
     color: #f4c142;
     text-shadow: #0d0d0d 2px 2px 4px;
     font-family: "cinzel", serif;
@@ -99,7 +101,6 @@ h2 {
     letter-spacing: 4px;
 }
 .poster h2{
-    position: center;
     color: #f5f3ef;
     font-family: "pinyon script", cursive;
     font-size: 1.5rem;
@@ -116,9 +117,10 @@ h2 {
     box-sizing: border-box;
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡PANEL CONT 1°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ── PANEL CONT 1 ──⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .panel {
     background: #1a1a1a;
     padding: 15px;
@@ -151,9 +153,10 @@ h2 {
   color: #ddd;
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡PANEL CONT 2 CLARO°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─ PANEL CONT 2 CLARO ─⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .panel.light {
   background: #e8e7e3;
   color: #1a1a1a; 
@@ -167,9 +170,9 @@ h2 {
   color: #222; 
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡PANEL CONT 3 ANCHO°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ── PANEL CONT 3 ANCHO ──⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .panel.wide {
   grid-column: 1 / -1;
   display: flex;
@@ -208,14 +211,21 @@ h2 {
   font-size: 1.05rem;
 }
 
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── FOORER ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+footer {
+  text-align: center;
+  background-color: #111;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #8b7a55;
+  border-top: 1px solid #3d2b1f;
+}
 
- .footer {
-    font-size: 0.8rem;
-  }
-
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡EFECTO INFO CUADROS°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ── EFECTO INFO CUADROS ──⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .imghvr-push-right {
     width: 50%;
     height: auto;
@@ -237,9 +247,9 @@ h2 {
     font-family: "Cormorant Garamond", serif;
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧𓆞 ·｡COLOR DEL FONDO DEL EFECTO°𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+─ ⋆⋅☆⋅⋆ COLOR DE FONDO DEL EFECTO ⋆⋅☆⋅⋆─
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 
 figure[class*="imghvr"],
 [class*="imghvr"] figcaption {
@@ -250,9 +260,9 @@ figure[class*="imghvr"],
   background-color: rgb(52, 65, 25) !important; /* deja fondo translúcido oscuro */
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡RESPONSIVE°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─── RESPONSIVE ───⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 @media (max-width: 900px) {
   .panel {
     flex-direction: column; /* en pantallas pequeñas vuelve a apilar */
