@@ -14,7 +14,7 @@
     display: inline-block;
     margin: 0;
     max-width: 100%;
-    background-color: #2266a5;
+    background-color: #111;
     color: #fff;
     overflow: hidden;
     -webkit-backface-visibility: hidden;
@@ -32,7 +32,7 @@
 
 [class^="imghvr-"] figcaption,
 [class*=" imghvr-"] figcaption {
-    background-color: #135796;
+    background-color: #111;
     padding: 30px;
     position: absolute;
     top: 0;
@@ -263,7 +263,7 @@
     left: 0;
     right: 0;
     content: "";
-    background-color: #135796;
+    background-color: #111;
 }
 
 [class^="imghvr-reveal-"] figcaption,
@@ -655,7 +655,7 @@
 [class^="imghvr-shutter-in-"]:after, [class^="imghvr-shutter-in-"]:before,
 [class*=" imghvr-shutter-in-"]:after,
 [class*=" imghvr-shutter-in-"]:before {
-    background: #135796;
+    background: #111;
     position: absolute;
     content: "";
 }
@@ -855,7 +855,7 @@
    ----------------------------- */
 [class^='imghvr-pivot-in'] figcaption,
 [class*=' imghvr-pivot-in'] figcaption {
-    background-color: #135796;
+    background-color: #111;
 }
 
 [class^='imghvr-pivot-in']:hover figcaption,
@@ -910,7 +910,7 @@
 
 [class^='imghvr-pivot-out'] figcaption,
 [class*=' imghvr-pivot-out'] figcaption {
-    background-color: #135796;
+    background-color: #111;
     z-index: -1;
 }
 
@@ -1353,7 +1353,7 @@
 [class^='imghvr-fall-away-'] figcaption,
 [class*=' imghvr-fall-away-'] figcaption {
     opacity: 0;
-    background-color: #135796;
+    background-color: #111;
 }
 
 [class^='imghvr-fall-away-']:hover img,
