@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #1a1a1a;
+  background-color: #111;
   color: #f4e3c1;
   font-family: "cormorant garamond", serif;
   padding-top: 100px;
@@ -13,8 +13,9 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    background: rgba(15, 15, 15, 0.95);
+    width: 100%;  
+    z-index: 1000;
+    background: rgb(15, 15, 15,0.95);
     border-bottom: 2px solid #cda84a;
 }
 nav {
@@ -22,11 +23,10 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    z-index: 1000;
 }
 nav a {
     text-decoration: none;
-    color: #cda84a;
+    color: #FFFCDD;
     font-family: "playfair display", serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -56,9 +56,9 @@ nav a:hover {
 }
 
 .panel h1 {
-  font-family: 'Italianno', cursive;
+  font-family: 'EB Garamond', serif;
   font-size: 3rem;
-  color: #d4af37;
+  color: #FFCA60;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -77,7 +77,7 @@ nav a:hover {
 
 .gallery-section {
   padding: 3rem 5%;
-  background-color: #1c1c1c;
+  background-color: #111;
 }
 
 .gallery {
@@ -93,14 +93,14 @@ nav a:hover {
 .art-card {
   overflow: hidden;
   position: relative;
-  border: 1px solid #3d2b1f;
-  background-color: #2a1f16;
+  border: 1px solid #2A7771;
+  background-color: #596A62;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .art-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 0 20px rgba(176, 159, 102, 0.807);
 }
 
 .art-card img {
@@ -120,12 +120,12 @@ nav a:hover {
   font-family: 'Playfair Display', serif;
   font-size: 1.2rem;
   margin: 0.5rem 0;
-  color: #f4e3c1;
+  color: #FFCA60;
 }
 
 .art-info p {
   font-size: 1.2rem;
-  color: #bfa97a;
+  color: #1d1710;
   font-family: "pinyon script", cursive;
 }
 

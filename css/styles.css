@@ -10,9 +10,6 @@ body {
     box-sizing: border-box;
 }
 
-main {
-  padding-top: 80px; 
-}
 
 /*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ── CONTENEDOR PRINCIPAL ──⋆⋅☆⋅⋆──
@@ -25,7 +22,6 @@ main {
     flex-direction: column;
 }
 
-
 /*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ──── NAVEGADOR ────⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
@@ -33,7 +29,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%;  
+    z-index: 1000;
     background: rgb(15, 15, 15,0.95);
     border-bottom: 2px solid #cda84a;
 }
@@ -42,11 +39,10 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 15px 0;
-    z-index: 1000;
 }
 nav a {
     text-decoration: none;
-    color: #cda84a;
+    color: #FFFCDD;
     font-family: "playfair display", serif;
     font-weight: 700;
     font-size: 1.1rem;
@@ -58,9 +54,9 @@ nav a:hover {
     text-shadow: 0 0 10px #cda84a;
 }
 
-/*°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡P/H2/ETC°‧ 𓆝 𓆟 𓆞 ·｡
-°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡°‧ 𓆝 𓆟 𓆞 ·｡*/
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─── P/H/ETC ───⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 p {
     font-family: "Cormorant Garamond", serif;
     font-size: 16px;
@@ -68,7 +64,7 @@ p {
     color: #f5f3ef;
 }
 h2 {
-    font-family: "cinzel decorative", serif;
+    font-family: "cinzel", serif;
     font-size: 20px;
     font-weight: 700;
     color: #cda84a;
@@ -93,6 +89,7 @@ h2 {
     box-sizing: border-box;
 }
 .poster h1{
+
     color: #f4c142;
     text-shadow: #0d0d0d 2px 2px 4px;
     font-family: "cinzel", serif;
@@ -122,7 +119,7 @@ h2 {
 ── ⋆⋅☆⋅⋆ ── PANEL CONT 1 ──⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .panel {
-    background: #1a1a1a;
+    background: #26281D;
     padding: 15px;
     border-radius: 4px;
     display: flex;
@@ -143,7 +140,7 @@ h2 {
     justify-content: center;
 }
 .panel h3 {
-    color: #cda84a;
+    color: #FFCA60;
     margin: 0 0 8px 0;
     font-size: 1.3rem;
 }
@@ -159,7 +156,7 @@ h2 {
 ── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .panel.light {
   background: #e8e7e3;
-  color: #1a1a1a; 
+  color: #ddd; 
 }
 
 .panel.light.texto {
@@ -179,7 +176,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   gap: 25px;
-  background: #111;
+  background: #841A1E;
   padding: 25px;
   border-radius: 6px;
 }
@@ -212,18 +209,6 @@ h2 {
 }
 
 /*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
-── ⋆⋅☆⋅⋆ ──── FOORER ────⋆⋅☆⋅⋆──
-── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
-footer {
-  text-align: center;
-  background-color: #111;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: #8b7a55;
-  border-top: 1px solid #3d2b1f;
-}
-
-/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ── EFECTO INFO CUADROS ──⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .imghvr-push-right {
@@ -253,11 +238,11 @@ footer {
 
 figure[class*="imghvr"],
 [class*="imghvr"] figcaption {
-  background: none !important; /* elimina fondo azul */
+  background: none !important; 
 }
 
 [class*="imghvr"] figcaption {
-  background-color: rgb(52, 65, 25) !important; /* deja fondo translúcido oscuro */
+  background-color: #5B7955 !important; 
 }
 
 /*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
