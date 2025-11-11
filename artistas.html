@@ -31,12 +31,17 @@
         </nav>
  </header>
 
-   <main>
-    <section class="intro">
+    <div class="container">
+    <section class="poster">
       <h1>Artistas Barrocos</h1>
-      <p>Explora algunos los artistas barrocos, entre los más influyentes y descubre nuevos, tal vez desconocidos para vos.</p>
+      <h2>Y un poco más</h2>
     </section>
+    </div>
 
+    <main class="grid"> 
+
+    <article class="panel">
+      <h3>Explora algunos los artistas barrocos, entre los más influyentes y descubre nuevos, tal vez desconocidos para vos.</h3>
     <section class="listado-artistas">
       <ul>
         <li><a href="https://es.wikipedia.org/wiki/Caravaggio" target="_blank">Caravaggio</a></li>
@@ -49,17 +54,36 @@
         <li><a href="https://es.wikipedia.org/wiki/Bartolom%C3%A9_Esteban_Murillo" target="_blank">Bartolomé Esteban Murillo</a></li>
         <li><a href="https://es.wikipedia.org/wiki/Nicolas_Poussin" target="_blank">Nicolas Poussin</a></li>
         <li><a href="https://es.wikipedia.org/wiki/Josefa_de_%C3%93bidos" target="_blank">Josefa de Óbidos</a></li>
+        <li><a href="https://www.wikiart.org/es/artists-by-art-movement/barroco#!#resultType:masonry" target="_blank">Más artistas</a></li>
       </ul>
     </section>
+    </article>
 
-    <section class="datos-interesantes">
-      <h2>Datos interesantes</h2>
-      <p id="dato"></p>
-    </section>
+    <aside class="panel light">
+      <div class="texto">
+          <h3 id="datos-random">Datos & notas</h3>
+
+          <p id="parrafo-1"></p>
+          <p id="parrafo-2"></p>
+          <p id="parrafo-3"></p>
+        </div>
+
+        <div>
+          <button id="cambiarDatos">
+            Cambiar Datos
+          </button>
+        </div>
+      </aside>
+
+      <section class="panel wide">
+
+
+      </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Galería de Arte Barroco. Todos los derechos reservados.</p>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

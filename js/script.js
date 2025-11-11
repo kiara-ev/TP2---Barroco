@@ -52,14 +52,39 @@ const datos = [
       "Para lograr efectos fieles de profundidad, utilizaba técnicas como el sfumato y la perspectiva.",
       "Se muestra fuertemete la crisis de la sociedad, justamente porque fue en el contexto que nacio.",
       "El barroco no solo fue pintura y escultura, también se manifestó en la literatura, el teatro y la arquitectura.",
-      
     ];
 
-    function cambiarDato() {
-      const indice = Math.floor(Math.random() * datos.length);
-      document.getElementById('dato').textContent = datos[indice];
+    //Se copian los datos en un array 
+    let datosRestantes = [...datos];
+
+    //Se toman 3 datos distintos 
+    function mostrar3Datos() {
+      if (datosRestantes.length < 3) {
+        datosRestantes = [...datos];
+      } //esto es para su quedan menos de 3 datos, se reinicia el array :p 
+
+      const seleccionados = [];
+      for (let i = 0; i < 3; i++) {
+        const indice = Math.floor(Math.random() * datosRestantes.length);
+        seleccionados.push(datosRestantes[indice]);
+        datosRestantes.splice(indice, 1); //elimina datos para que no se repitan 
+      }
+      return seleccionados;
     }
 
-    cambiarDato(); // al cargar
-    setInterval(cambiarDato, 5000); // cambia cada 5 segundos
+    //Función para actualizar los parrafos :P
+      function cambiarDato() {
+      const nuevos = mostrar3Datos();
+      document.getElementById("dato1").textContent = nuevos[0];
+      document.getElementById("dato2").textContent = nuevos[1];
+      document.getElementById("dato3").textContent = nuevos[2];
+    }
+
+    //Mostrar en la pag los 3 datos al cargar
+    window.addEventListener('DOMContentLoaded', cambiarDato);
+
+    //Botón ;P
+    document.getElementById("cambiarDatos").addEventListener("click", cambiarDato);
+
+
  
