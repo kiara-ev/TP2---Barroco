@@ -103,6 +103,32 @@ nav a:hover {
   padding: 30px;
 }
 
+.panel.wide .contenido {
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+
+.panel.wide .contenido h2 {
+  margin-bottom: 10px;
+}
+
+.panel.wide .extras {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.video-container {
+  flex-shrink: 0;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 .listado-artistas{
   columns: 2;
   column-gap: 50px;
@@ -139,7 +165,7 @@ nav a:hover {
   font-family: 'cormorant garamond', serif;
 }
 
-.button {
+.btn {
   background: #d4af37;
   color: #000;
   font-weight: bold;
@@ -148,7 +174,7 @@ nav a:hover {
   padding: 10px 20px;
 }
 
-.button:hover {
+.btn:hover {
   background: #f0d98a;
 }
 
@@ -168,6 +194,7 @@ nav a:hover {
   font-style: italic;
   font-size: 1.1em;
 }
+
 
 /*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ──── FOORER ────⋆⋅☆⋅⋆──
