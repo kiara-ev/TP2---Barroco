@@ -1,0 +1,145 @@
+body {
+    margin: 10px;
+    padding: 0;
+    margin-top: 50px;
+    background: #e8b8ff; 
+    font-family: "Cormorant Garamond", serif;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── NAVEGADOR ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    z-index: 1000;
+    background: rgb(15, 15, 15,0.95);
+    border-bottom: 2px solid #cda84a;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+nav a {
+    text-decoration: none;
+    color: #FFFCDD;
+    font-family: "playfair display", serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+nav a:hover {
+    color: #f5f3ef;
+    text-shadow: 0 0 10px #cda84a;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ── CONTENEDOR PRINCIPAL ──⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 14px;
+    font-style: normal;
+    color: black;
+}
+
+h1 {
+    font-family: "playfair display", serif;
+    font-size: 20px;
+    color: rgb(156, 74, 207);
+}
+
+h2 {
+    font-family: "cinzel", serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #db65cf;
+}
+
+.main-container {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #e9b9ff;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── CAJITAS ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+.box {
+    width: 30%;
+    padding: 30px;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+.white-box {
+    background: white;
+}
+
+.green-box {
+    background: #c4ff6a;
+}
+
+.profile-box {
+    width: 25%;
+    padding: 0;
+    text-align: center;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── FOTO ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+.profile-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ── LISTA DEL PERFIL ──⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+.profile-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── IMG MEMES ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+.bottom-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #e9b9ff;
+    padding: 30px 30px 50px;
+}
+
+.bottom-images img {
+    width: 260px;
+    border-radius: 10px;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── FOOTER ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+footer {
+  background-color: #111;
+  color: #e2bc3c;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #d4af37;
+}
