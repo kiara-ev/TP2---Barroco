@@ -40,6 +40,10 @@ nav a:hover {
     text-shadow: 0 0 10px #cda84a;
 }
 
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ── CONTENEDORES ──⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+
 .conteiner {
     width: 100%;
     max-width: 13000px;
@@ -77,6 +81,10 @@ nav a:hover {
   margin: 30px 0 80px;
 }
 
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── PANELES ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+
 .panel {
   background: #5B7854;
   border-radius: 14px;
@@ -94,40 +102,121 @@ nav a:hover {
 }
 
 .panel.wide {
-  flex-basis: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
   background: #AD2022;
-  padding: 30px;
+  padding: 60px 40px;
+  border-radius: 10px;
+  color: #fff;
+  box-sizing: border-box;
 }
 
-.panel.wide .contenido {
-  flex: 1;
-  color: white;
+.panel.wide .texto-central {
   text-align: center;
+  max-width: 900px;
+  margin-bottom: 60px;;
 }
 
-.panel.wide .contenido h2 {
+.panel.wide .texto-central h2 {
+  font-size: 2.4rem;
   margin-bottom: 10px;
 }
 
-.panel.wide .extras {
-  margin-top: 20px;
+.panel.wide .texto-central p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  margin: 0;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+PANEL WIDE ELEMENTOS EXTRAS
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+
+.panel.wide .conte-container {
+  width: 100%;
+  max-width: 1150px;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;     
 }
 
 .video-container {
-  flex-shrink: 0;
+  flex: 1;
+  max-width: 360px;
+  text-align: center;
 }
 
 .video-container iframe {
-  max-width: 100%;
-  border-radius: 10px;
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  margin-bottom: 10px;
 }
+
+.video-container p {
+  font-size: 0.95rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+IMAGENES DE CANALES Y ARTICULOS
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+
+.canal img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.canal h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.canal p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+.extras {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  margin-top: 0;
+}
+
+.extra-item {
+  text-align: center;
+  max-width: 200px;
+}
+
+.extra-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.extra-item h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+ARTISTAS, TEXTO, BOTON Y DATOS
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 
 .listado-artistas{
   columns: 2;
