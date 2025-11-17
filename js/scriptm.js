@@ -41,8 +41,16 @@ museos.forEach((m, index) => {
   point.className = "museum-point";
   point.dataset.index = index;
 
-  // Posición corregida
-  point.style.left = (150 + index * 250) + "px";
+  let spacing;
+
+  if (window.innerWidth <= 768) {
+    //Mobile se habilita scroll
+    spacing = 220; // separación fija entre puntos
+    point.style.left = (index * spacing + 50) + "px";
+  } else {
+    //Desktop sin scroll
+    point.style.left = (150 + index * 250) + "px";
+  }
 
   const year = document.createElement("span");
   year.className = "year";
@@ -51,6 +59,20 @@ museos.forEach((m, index) => {
   point.appendChild(year);
   container.appendChild(point);
 });
+
+// Ancho de línea dinámico
+if (window.innerWidth <= 768) {
+  line.style.width = (museos.length * 220) + "px"; // línea igual a cantidad de museos
+} else {
+  line.style.width = "3000px";
+}
+
+// Ajustar ancho de línea según dispositivo
+if (window.innerWidth <= 768) {
+  line.style.width = "100%";
+} else {
+  line.style.width = "3000px";
+}
 
 
 // ANIMACIONES GSAP
@@ -125,4 +147,3 @@ closeBtn.addEventListener("click", cerrarTarjeta);
 
 // Cerrar tocando el fondo
 overlay.addEventListener("click", cerrarTarjeta);
-

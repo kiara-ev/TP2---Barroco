@@ -50,12 +50,17 @@ h1 {
 ── ⋆⋅☆⋅⋆ ──── TIMELINE ───⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
 .timeline-container {
-    width: 100%;
-    height: 260px;
-    overflow: hidden; /* ← elimina la barra */
-    white-space: nowrap;
-    padding-top: 80px;
-    position: relative;
+  width: 100%;
+  height: 260px;
+  overflow-x: auto; /* permitir scroll en mobile */
+  white-space: nowrap;
+  padding-top: 80px;
+  position: relative;
+  scrollbar-width: none; /* Firefox */
+}
+
+.timeline-container::-webkit-scrollbar {
+  display: none; /* Chrome/Edge/Safari */
 }
 
 .timeline-line {
@@ -161,5 +166,97 @@ h1 {
     background: rgba(0,0,0,0.4);
     opacity: 0;
     display: none;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─── FOOTER ───⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+footer {
+  background-color: #111;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #d4af37;
+}
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ─── RESPONSIVE ───⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 80px;
+    font-size: 14px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 4px 6px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
+
+  .timeline-container {
+    height: 200px;
+    padding-top: 60px;
+    overflow-x: hidden; /* Eliminamos scroll horizontal */
+  }
+
+  .timeline-line {
+    width: 100% !important; 
+  }
+
+  .museum-point {
+    width: 18px;
+    height: 18px;
+  }
+
+  .museum-point span.year {
+    font-size: 0.75rem;
+    top: -24px;
+  }
+
+  .museum-card {
+    width: 90%;
+    max-width: 360px;
+    padding: 18px;
+  }
+
+  .museum-card img {
+    height: 200px;
+    border-radius: 8px;
+  }
+
+  .museum-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .museum-card p {
+    font-size: 0.95rem;
+  }
+
+  .close-btn {
+    font-size: 18px;
+  }
+
+  .video-container p,
+  .canal p,
+  .extra-item p {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 14px 10px;
+    font-size: 0.85rem;
+  }
 }
 

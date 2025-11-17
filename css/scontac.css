@@ -158,3 +158,58 @@ input:focus, textarea:focus {
   font-weight: bold;
   color: #4A5022;
 }
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── RESPONSIVE ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+@media (max-width: 768px) {
+
+  body {
+    padding: 120px 0 80px; 
+    min-height: auto;
+    display: block;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+
+  .contacto {
+    width: 92%;
+    max-width: 380px;
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
+    padding: 0.55rem;
+  }
+
+  #contador {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 6px 0;
+  }
+}

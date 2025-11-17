@@ -143,3 +143,60 @@ footer {
   padding: 20px 0;
   border-top: 1px solid #d4af37;
 }
+
+/*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── RESPONSIVE ────⋆⋅☆⋅⋆──
+── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
+@media (max-width: 768px) {
+
+  body {
+    margin: 0;
+    padding-top: 110px; 
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+
+  .main-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .box,
+  .profile-box {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-box img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-box ul {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bottom-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .bottom-images img {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 12px 0;
+  }
+}

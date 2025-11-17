@@ -73,18 +73,19 @@ const datos = [
     }
 
     //Función para actualizar los parrafos :P
-      function cambiarDato() {
-      const nuevos = mostrar3Datos();
-      document.getElementById("dato1").textContent = nuevos[0];
-      document.getElementById("dato2").textContent = nuevos[1];
-      document.getElementById("dato3").textContent = nuevos[2];
+     function cambiarDato() {
+     const nuevos = mostrar3Datos();
+     document.getElementById("parrafo-1").textContent = nuevos[0];
+     document.getElementById("parrafo-2").textContent = nuevos[1];
+     document.getElementById("parrafo-3").textContent = nuevos[2];
     }
 
-    //Mostrar en la pag los 3 datos al cargar
-    window.addEventListener('DOMContentLoaded', cambiarDato);
+    document.addEventListener("DOMContentLoaded", function () {
+  cambiarDato(); // datos iniciales
+  document.querySelector(".btn").addEventListener("click", cambiarDato);
+});
+    window.addEventListener("DOMContentLoaded", cambiarDato);
 
-    //Botón ;P
-    document.getElementById("cambiarDatos").addEventListener("click", cambiarDato);
 
 
  

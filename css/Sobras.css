@@ -145,11 +145,68 @@ footer {
 /*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ─── RESPONSIVE ───⋆⋅☆⋅⋆──
 ── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──*/
-@media (max-width: 900px) {
-  .panel {
-    flex-direction: column; /* en pantallas pequeñas vuelve a apilar */
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 80px;
+    font-size: 14px;
   }
-  .panel .texto {
-    width: 100%;
+
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+    padding: 4px 6px;
+  }
+
+  .panel {
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .panel h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .panel p {
+    font-size: 0.95rem;
+  }
+
+  .gallery-section {
+    padding: 2rem 6%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .art-card {
+    border-width: 1px;
+    border-radius: 6px;
+  }
+
+  .art-card img {
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .art-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .art-info p {
+    font-size: 1.1rem;
+  }
+
+  footer {
+    padding: 1.2rem;
+    font-size: 0.85rem;
   }
 }
