@@ -2,31 +2,31 @@
 const museos = [
   {
     nombre: "Louvre",
-    año: 1793,
+    año: "1793 - Francia, París",
     descripcion: "Famoso por La Gioconda y por su vastísima colección de arte de todos los tiempos.",
     imagen: "img/louvre.jpg"
   },
   {
     nombre: "Museo del Prado",
-    año: 1819,
+    año: "1819 - España, Madrid",
     descripcion: "Uno de los museos más importantes del mundo. Alberga obras de Goya, Velázquez, Rubens y más.",
     imagen: "img/prado.jpg"
   },
   {
     nombre: "Metropolitan Museum of Art",
-    año: 1870,
+    año: "1870 - EEUU, New York",
     descripcion: "Uno de los museos más grandes de Estados Unidos. Incluye 5.000 años de arte.",
     imagen: "img/metropolitan.jpg"
   },
   {
     nombre: "Museo Nacional de Arte de Cataluña",
-    año: 1934,
+    año: "1934 - España, Barcelona",
     descripcion: "Ubicado en Montjuïc, con colecciones de arte románico, gótico y renacentista.",
     imagen: "img/dart.jpg"
   },
   {
     nombre: "Tate Modern",
-    año: 2000,
+    año: "2000 - Reino Unido, Londres",
     descripcion: "Museo de arte moderno y contemporáneo en Londres.",
     imagen: "img/tate.jpg"
   },

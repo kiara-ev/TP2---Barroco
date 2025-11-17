@@ -52,10 +52,10 @@ h1 {
 .timeline-container {
     width: 100%;
     height: 260px;
-    overflow-x: scroll;
+    overflow: hidden; /* ← elimina la barra */
     white-space: nowrap;
     padding-top: 80px;
-    position: relative; 
+    position: relative;
 }
 
 .timeline-line {
@@ -103,24 +103,53 @@ h1 {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 350px;
-    transform: translate(-50%, -50%) scale(0.7);
-    background: white;
-    padding: 20px;
+    width: 420px;
+    max-width: 90%;
+    background: #1c1c1c;
+    color: #e8e6e3;
+    padding: 25px;
     border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+    box-shadow: 0 0 25px rgba(255, 215, 110, 0.35);
+    transform: translate(-50%, -50%) scale(0.7);
     opacity: 0;
     display: none;
     filter: blur(10px);
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.museum-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.museum-card h2 {
+    font-family: "Playfair Display", serif;
+    color: #f6d179;
+    font-size: 1.7rem;
+    margin: 10px 0;
+}
+
+.museum-card p {
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
 .close-btn {
     position: absolute;
     top: 8px;
     right: 12px;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
-    color: #777;
+    color: #e8e6e3;
+    transition: 0.2s;
+}
+.close-btn:hover {
+    color: #f6d179;
+    transform: scale(1.2);
 }
 
 /*── ⋆⋅☆⋅⋆ ──── ⋆⋅☆⋅⋆ ──────⋆⋅☆⋅⋆──
